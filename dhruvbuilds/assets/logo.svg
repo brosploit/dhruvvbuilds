@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cyberGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="facetTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="facetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="facetRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Orbit Glow Ring -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#cyberGrad1)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="25s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="100" r="76" fill="none" stroke="url(#cyberGrad2)" stroke-width="1" stroke-dasharray="14 10" opacity="0.3">
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="18s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 3D Isometric Crystal Cube Faces -->
+  <g filter="url(#neonGlow)">
+    <!-- Top Face -->
+    <polygon points="100,28 152,58 100,88 48,58" fill="url(#facetTop)" stroke="#38bdf8" stroke-width="1.5"/>
+    <!-- Left Face -->
+    <polygon points="48,58 100,88 100,148 48,118" fill="url(#facetLeft)" stroke="#a855f7" stroke-width="1.5"/>
+    <!-- Right Face -->
+    <polygon points="100,88 152,58 152,118 100,148" fill="url(#facetRight)" stroke="#06b6d4" stroke-width="1.5"/>
+  </g>
+
+  <!-- Stylized Monogram D & V Core -->
+  <g id="monogram" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 82 70 L 106 70 C 122 70 128 80 128 92 C 128 104 122 114 106 114 L 82 114 Z" 
+          fill="none" stroke="#ffffff" stroke-width="5" filter="url(#neonGlow)"/>
+    <path d="M 82 70 L 106 70 C 122 70 128 80 128 92 C 128 104 122 114 106 114 L 82 114 Z" 
+          fill="none" stroke="url(#cyberGrad1)" stroke-width="3.5"/>
+    <path d="M 90 92 L 102 124 L 114 92" 
+          fill="none" stroke="url(#cyberGrad2)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="102" cy="92" r="3.5" fill="#00f2fe" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Corner Tech Accent Crosshairs -->
+  <path d="M 100 12 L 100 22 M 100 178 L 100 188 M 12 100 L 22 100 M 178 100 L 188 100" 
+        stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+</svg>

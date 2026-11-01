@@ -1,0 +1,58 @@
+# ==============================================================================
+# DhruvBuilds 3D Portfolio - InfinityFree / Apache Server Configuration
+# ==============================================================================
+
+# 1. Enable UTF-8 Encoding by default
+AddDefaultCharset UTF-8
+
+# 2. Proper MIME Types for 3D & Modern Web Assets
+<IfModule mod_mime.c>
+  AddType image/svg+xml .svg .svgz
+  AddEncoding gzip .svgz
+  AddType application/pdf .pdf
+  AddType application/javascript .js
+  AddType text/css .css
+  AddType font/woff .woff
+  AddType font/woff2 .woff2
+  AddType model/gltf-binary .glb
+  AddType model/gltf+json .gltf
+  AddType application/json .json
+</IfModule>
+
+# 3. Enable GZIP / DEFLATE Compression for maximum speed
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE application/xml application/xhtml+xml application/rss+xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# 4. Leverage Browser Caching for Static Assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# 5. Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  # Allow Fonts and Canvas assets to load across origins if needed
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js|glb|gltf)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+# 6. Prevent directory indexing
+Options -Indexes
+

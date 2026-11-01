@@ -1,0 +1,103 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2092 >>
+stream
+BT
+/F1 18 Tf
+50 740 Td
+(DHRUV - CREATIVE TECHNOLOGIST & SOFTWARE ENGINEER) Tj
+/F1 10 Tf
+0 -22 Td
+(Email: dhruvbuilds@gmail.com   |   Portfolio: dhruvbuilds.epizy.com) Tj
+0 -14 Td
+(GitHub: github.com/dhruvbuilds | LinkedIn: linkedin.com/in/dhruvbuilds) Tj
+0 -14 Td
+(YouTube: @dhruvbuilds          | Instagram: @dhruvbuilds) Tj
+/F1 12 Tf
+0 -28 Td
+(PROFESSIONAL SUMMARY) Tj
+/F1 10 Tf
+0 -16 Td
+(Creative Technologist and Software Engineer specializing in 3D WebGL experiences,) Tj
+0 -14 Td
+(modern web applications, full-stack systems, and AI integration. Passionate about) Tj
+0 -14 Td
+(building performant, interactive digital products that inspire users.) Tj
+/F1 12 Tf
+0 -26 Td
+(CORE TECHNICAL SKILLS) Tj
+/F1 10 Tf
+0 -16 Td
+(- 3D & Graphics: Three.js, WebGL, Canvas API, Shaders (GLSL), GSAP, 3D Math) Tj
+0 -14 Td
+(- Frontend: JavaScript (ES6+), TypeScript, React, HTML5, CSS3, Modern UI/UX) Tj
+0 -14 Td
+(- Backend & Cloud: Node.js, Express, Python, REST APIs, Linux/Bash, Serverless) Tj
+0 -14 Td
+(- Tools & Workflow: Git, GitHub, Docker, Postman, Vite, Performance Profiling) Tj
+/F1 12 Tf
+0 -26 Td
+(FEATURED ENGINEERING PROJECTS) Tj
+/F1 11 Tf
+0 -16 Td
+(1. 3D WebGL Holographic Portfolio) Tj
+/F1 10 Tf
+0 -14 Td
+(   - Built high-performance 3D interactive web environment with Three.js.) Tj
+0 -14 Td
+(   - Integrated real-time particle dynamics, sound synthesizer, and CLI terminal.) Tj
+/F1 11 Tf
+0 -18 Td
+(2. Polaris - Multimodal AI Intelligence Assistant) Tj
+/F1 10 Tf
+0 -14 Td
+(   - Engineered autonomous AI agent architecture with tool-calling hooks.) Tj
+0 -14 Td
+(   - Designed responsive dashboard with real-time audio telemetry.) Tj
+/F1 11 Tf
+0 -18 Td
+(3. DegreePilot - Educational Intelligence Portal) Tj
+/F1 10 Tf
+0 -14 Td
+(   - Developed modern curriculum platform with interactive progress analytics.) Tj
+/F1 11 Tf
+0 -18 Td
+(4. CyberGuard Network & Security Suite) Tj
+/F1 10 Tf
+0 -14 Td
+(   - Security automation scripts for network packet analysis and auditing.) Tj
+/F1 12 Tf
+0 -26 Td
+(EDUCATION) Tj
+/F1 10 Tf
+0 -16 Td
+(Bachelor of Technology in Computer Science & Engineering) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002385 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2455
+%%EOF
+
